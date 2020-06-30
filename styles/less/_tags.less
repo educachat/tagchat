@@ -1,0 +1,43 @@
+.tag {
+
+  &-area {
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    grid-area: tag-area;
+    overflow: hidden;
+
+    .tag {
+      border: 1px solid #ddd;
+      color: #333;
+      border-radius: 20px;
+      display: block;
+      padding: 3px;
+      padding-left: 7px;
+      text-decoration: none;
+      white-space: nowrap;
+
+      :hover {
+        background-color: #333;
+        color: #fff;
+      }
+
+      &.ativado {
+        background-color: #f7e122;
+      }
+    }
+  }
+
+  &-lista {
+    display: flex;
+    overflow-x: auto;
+
+    .badge {
+      font-size: 0.8rem;
+    }
+
+    li {
+      margin-left: 5px;
+    }
+  }
+}

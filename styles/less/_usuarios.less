@@ -1,0 +1,44 @@
+.usuarios {
+  &-area {
+    grid-area: usuarios-area;
+
+    h1 {
+      font-size: 1.5rem;
+
+      .badge {
+        font-size: .75rem;
+        vertical-align: top;
+      }
+    }
+  }
+
+  &-lista {
+    flex-grow: 1;
+    overflow-y: scroll;
+    position: absolute;
+    top: 30px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .usuario {
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+
+      img {
+        border-radius: 50%;
+        margin-right: 5px;
+        width: 40px;
+      }
+    }
+  }
+}

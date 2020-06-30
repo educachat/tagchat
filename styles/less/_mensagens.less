@@ -1,0 +1,89 @@
+.mensagem {
+
+  &-area {
+    grid-area: mensagem-area;
+  }
+}
+
+.mensagens-lista {
+  // background-color: #E1EFFF;
+  grid-area: mensagens-lista;
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+
+  .mensagem {
+    display: grid;
+    grid-template-areas:
+      "usuario mensagem-reply"
+      "usuario mensagem-texto";
+    grid-template-columns: 50px 1fr;
+    margin: 10px 10px 10px 0;
+
+    .usuario {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-size: .75rem;
+      grid-area: usuario;
+      justify-content: center;
+      text-align: center;
+
+      img {
+        border-radius: 50%;
+        width: 40px;
+      }
+
+    }
+
+    &-texto {
+      // background-color: #FFF;
+      background-color: #74B3EE;
+      color: #fff;
+      border-radius: 0 5px 5px 5px;
+      grid-area: mensagem-texto;
+      padding: 10px;
+      // width: fit-content;
+    }
+
+    &-resposta {
+      background-color: #EFEFEF;
+      border-radius: 5px;
+      color: #aaa;
+      margin: 0 10px -10px;
+      overflow: hidden;
+      padding: 5px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+  }
+}
+
+
+/*
+
+.msgEnviada {
+  background-color: #56a8eb;
+  color: white;
+}
+
+.msgSpan {
+  margin-left: 3px;
+  padding: 6px;
+  border-radius: 10px;
+  max-width: 97%;
+  background-color: #eaeaea;
+  word-break: break-all;
+  word-wrap: break-word;
+  display: inline-block;
+  vertical-align: top;
+  max-width: calc(100% - 58px);
+  font-size: 10pt;
+  transition: background 700ms;
+}
+
+    background-color: #FFADAD;
+    color: #000;
+    border: 1px solid #FE7D7D;
+
+*/

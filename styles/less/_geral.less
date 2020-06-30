@@ -1,0 +1,59 @@
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+html,
+body {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.corpo {
+  flex-grow: 1;
+  grid-area: corpo;
+  display: grid;
+  grid-template-areas:
+    "tag-area usuarios-area dashboard-area"
+    "mensagem-area usuarios-area dashboard-area";
+  grid-template-columns: 1fr 200px 200px;
+  grid-template-rows: auto-fill 1fr;
+  gap: 10px;
+}
+
+.badge {
+  background-color: #ddd;
+  border-radius: 10px;
+  display: inline-block;
+  height: 15px;
+  margin-left: 3px;
+  padding: 3px;
+  text-align: center;
+  width: 15px;
+}
+
+.dashboard-area {
+  grid-area: dashboard-area;
+}
+
+form {
+  display: flex;
+
+  input[type=text] {
+    flex-grow: 1;
+  }
+}

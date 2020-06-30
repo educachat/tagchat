@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TagChat</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>TagChat</h1>
+      <div class="avatar"></div>
+    </div>
+  </header>
+  <div class="container corpo">
+    <div class="tag-area">
+      <a href="#" class="tag">Todos <span class="badge">31</span></a>
+      <ul class="tag-lista tag-mais-recente" id="tag-mais-recente">
+      </ul>
+    </div>
+    <div class="mensagem-area">
+      <div class="mensagens-lista">
+        <div class="mensagem">
+          <div class="usuario">
+            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu9X0Nx5Kg4AXULfG1m94dfzrWh75_QxxbNaxxt3=s64-c-mo"
+              alt="">
+            Rafael França
+          </div>
+          <div class="mensagem-texto">
+            Consequatur repellendus fuga nam praesentium ullam maiores natus, assumenda
+            perferendis consectetur nisi alias, iure vero quasi, exercitationem nemo amet rem laborum facere tempora
+            libero excepturi. Iure <a href="#" class="tag tag-Aluno">#Aluno</a> enim tempora repudiandae maxime.
+          </div>
+        </div>
+        <div class="mensagem">
+          <div class="usuario">
+            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu9X0Nx5Kg4AXULfG1m94dfzrWh75_QxxbNaxxt3=s64-c-mo"
+              alt="">
+            Rafael França
+          </div>
+          <div class="mensagem-texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nulla, corporis magnam deserunt reiciendis
+            sequi non nostrum placeat quae laudantium maiores tempore adipisci enim natus fugit tenetur magni laborum
+            architecto?
+          </div>
+          <div class="mensagem-resposta">Consequatur repellendus fuga nam praesentium ullam maiores natus, assumenda
+            perferendis consectetur nisi alias, iure vero quasi, exercitationem nemo amet rem laborum facere tempora
+            libero excepturi. Iure enim tempora repudiandae maxime.</div>
+        </div>
+        <div class="mensagem">
+          <div class="usuario">
+            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu9X0Nx5Kg4AXULfG1m94dfzrWh75_QxxbNaxxt3=s64-c-mo"
+              alt="">
+            Rafael França
+          </div>
+          <div class="mensagem-texto">
+            Lorem ipsum dolor sit
+          </div>
+          <div class="mensagem-resposta">Consequatur repellendus fuga nam praesentium ullam maiores natus, assumenda
+            perferendis consectetur nisi alias, iure vero quasi, exercitationem nemo amet rem laborum facere tempora
+            libero excepturi. Iure enim tempora repudiandae maxime.</div>
+        </div>
+        <div class="mensagem">
+          <div class="usuario">
+            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu9X0Nx5Kg4AXULfG1m94dfzrWh75_QxxbNaxxt3=s64-c-mo"
+              alt="">
+            Rafael França
+          </div>
+          <div class="mensagem-texto">
+            Lorem ipsum dolor sit?
+          </div>
+        </div>
+        <div class="mensagem">
+          <div class="usuario">
+            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu9X0Nx5Kg4AXULfG1m94dfzrWh75_QxxbNaxxt3=s64-c-mo"
+              alt="">
+            Rafael França
+          </div>
+          <div class="mensagem-texto">
+            Lorem ipsum dolor sit
+          </div>
+          <div class="mensagem-resposta">Consequatur repellendus fuga nam praesentium ullam maiores natus, assumenda
+            perferendis consectetur nisi alias, iure vero quasi, exercitationem nemo amet rem laborum facere tempora
+            libero excepturi. Iure enim tempora repudiandae maxime.</div>
+        </div>
+        <div class="mensagem">
+          <div class="usuario">
+            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu9X0Nx5Kg4AXULfG1m94dfzrWh75_QxxbNaxxt3=s64-c-mo"
+              alt="">
+            Rafael França
+          </div>
+          <div class="mensagem-texto">
+            Lorem ipsum dolor sit?
+          </div>
+        </div>
+      </div>
+      <form action="#">
+        <input type="text">
+        <input type="submit">
+      </form>
+    </div>
+    <aside class="usuarios-area">
+      <h1>Usuarios <span id="usuarios-qtde" class="badge"></span></h1>
+      <ul id="usuarios-lista" class="usuarios-lista">
+      </ul>
+    </aside>
+    <aside class="dashboard-lista">
+      <h1>Dashboard</h1>
+      <section>
+        nuvem de palavras
+      </section>
+      <section>
+        contador de mensagens
+      </section>
+    </aside>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/locales/pt_BR/faker.pt_BR.min.js"
+    type="text/javascript"></script>
+
+  <script src="./scripts/tags.js"></script>
+  <script src="./scripts/usuarios.js"></script>
+  <script src="./scripts/tagchat.js"></script>
+</body>
+
+</html>
